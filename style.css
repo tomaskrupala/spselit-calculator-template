@@ -65,7 +65,6 @@ body {
   padding: 25px;
   font-size: 45px;
   font-family: "Lucida Console", sans-serif;
-  font-weight: 100;
   overflow-x: auto;
 }
 
@@ -74,7 +73,6 @@ body {
   padding: 10px 25px;
   font-size: 36px;
   font-family: "Lucida Console", sans-serif;
-  font-weight: 100;
   overflow-x: auto;
 }
 
