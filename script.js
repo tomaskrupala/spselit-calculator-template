@@ -71,7 +71,7 @@ document.addEventListener("keydown", (event) => {
             console.log(vstup);
             vysledek = eval(vstup);
             if (vysledek % 2 !==0){
-                vysledek = Math.round(vysledek * 100) / 100; // zaokrouhlení na dvě desetinná místa
+                vysledek = Math.round(vysledek * 100) / 100; 
             }
             vstup = vstup.replace("**", "^");
             history.push(`${vstup} = ${vysledek}`);
