@@ -77,12 +77,13 @@ document.addEventListener("keydown", (event) => {
             history.push(`${vstup} = ${vysledek}`);
             console.log(history);
             aktualizaceDisplayu();
+            vstup = "";
+            vysledek = "";
 
             localStorage.setItem("historie", JSON.stringify(history));
             historyDisplay.innerHTML = history.map(item => `<p>${item}</p>`).join("");
             console.log(localStorage);
-            vstup = "";
-            vysledek = "";
+          
          
         } catch (error) {
             outputDisplay.textContent = "Error";
@@ -91,8 +92,7 @@ document.addEventListener("keydown", (event) => {
         vstup = vstup.slice(0, -1);
         aktualizaceDisplayu();
     } else if (klav === "Escape") {
-        vstup = "";
-        vysledek = "";
+      
         aktualizaceDisplayu();
     } else if (/^[0-9+\-*/().^]$/.test(klav)) {
         vstup += klav;
